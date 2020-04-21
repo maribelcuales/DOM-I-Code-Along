@@ -116,3 +116,15 @@ cardTitle.forEach(element => {
   // style is a method that you can use on the DOM that would style your elements just like you would in css 
   // Note: if in JS, use camelCase (e.g backgroundColor instead of background-color in CSS)
 })
+
+// (Using getElementsByClassName() which returns an HTML collection)
+
+const cardTitles = document.getElementsByClassName('card-title');  // returns an html collection 
+
+console.log(cardTitles); 
+
+for (let i = 0; i < cardTitles.length; i++) {  // use for loop to loop over the html collection; 
+  cardTitles[i].style.color = 'pink'; // give it this styling 
+}
+
+// this, however, is more code so it is better to use querySelectorAll() instead 
