@@ -24,3 +24,28 @@
     <body></body> is an object 
     <nav></nav> is an object 
     <h1></h1> is an object 
+
+- Model: 
+    - Tree-like structure - everything is branching off from one another
+    - The model is a Data structure 
+    - Example: 
+                HTML
+          _______|_______
+          |              |
+         HEAD           BODY
+          |            __|__
+        TITLE          |    |
+                      NAV  DIV
+                       |    |
+                      UL    P
+                    ___|___
+                    |  |  |
+                   LI  LI LI  
+
+- Nodes: 
+    - Everything that we can change in the document is a node:
+      - Elements 
+      - Text with elements
+      - HTML attributes
+
+*/
