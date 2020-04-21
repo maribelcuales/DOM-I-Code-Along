@@ -128,3 +128,16 @@ for (let i = 0; i < cardTitles.length; i++) {  // use for loop to loop over the 
 }
 
 // this, however, is more code so it is better to use querySelectorAll() instead 
+
+
+/*
+Older DOM Methods: 
+  - getElementById()
+  - getElementsByClassName()
+  - getElementsByTagName()
+  
+**Newer and preferred DOM Methods:
+  - querySelector()
+  - querySelectorAll()
+*/ 
+
