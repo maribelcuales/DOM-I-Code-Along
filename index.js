@@ -48,7 +48,7 @@
       - Text with elements
       - HTML attributes
 
-      
+
 /////   DOM selectors /////
 - Selectors used to grab elements or nodes in the DOM 
   - getElementById()
@@ -80,4 +80,24 @@ const logoTitle = document.getElementById('logo-title');
 //  - e.g 
 const firstTitle = document.querySelector(".card-title"); 
 // console.log(firstTitle);   
-                    
+
+
+/////   getElementsByTagName()    /////
+// - return a multiple selections in the form of a HTMLCollection
+// - use a for loop to loop through an html collection
+// - You can target specific elements by using the array-like syntax of a HTMLCollection
+
+//- e.g
+const links = document.getElementsByTagName('a');
+// console.log(links);
+
+
+/////   getElementsByClassName()    /////
+// - return a multiple selections in the form of a HTMLCollection
+// - use a for loop to loop through an html collection
+// - You can target specific elements by using the array-like syntax of a HTMLCollection
+
+// - e.g 
+const menuItems = document.getElementsByClassName('menu-item');
+// console.log(menuItems);
+
