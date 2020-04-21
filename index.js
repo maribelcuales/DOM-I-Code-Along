@@ -48,4 +48,36 @@
       - Text with elements
       - HTML attributes
 
+      
+/////   DOM selectors /////
+- Selectors used to grab elements or nodes in the DOM 
+  - getElementById()
+  - getElementsByClassName()
+  - getElementsByTagName()
+  - querySelector()
+  - querySelectorAll()
+
+- Because we're using the DOM and were grabbing things in the Document, we're going to use Document. 
 */
+
+
+/////   getElementById()    /////
+//  - a single selector 
+//  - grabs an element on our page that has an ID 
+//  - any valid ID will work (no need for # CSS selector, just ID name) 
+
+//- e.g
+const logoTitle = document.getElementById('logo-title');
+// console.log(logoTitle); 
+
+
+/////   querySelector()   /////
+//  - a single selector
+//  - Any valid CSS selector will work but you MUST use the selector for the argument
+//  - it goes through and queries the DOM searching for whatever you put inside (any valid CSS Selectors) 
+//  - Note: Be careful to mention that it finds the FIRST matching selection.  This can be an issue of developers forget and have multiple class names. 
+
+//  - e.g 
+const firstTitle = document.querySelector(".card-title"); 
+// console.log(firstTitle);   
+                    
