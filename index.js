@@ -101,3 +101,18 @@ const links = document.getElementsByTagName('a');
 const menuItems = document.getElementsByClassName('menu-item');
 // console.log(menuItems);
 
+
+////    querySelectorAll()    /////
+// - return a multiple selections in the form of a NodeList instead of an html collection  
+// - since it's a node list, we can use forEach to loop through the node list 
+
+// - e.g
+const cardTitle = document.querySelectorAll('.card-title');
+console.log(cardTitle); 
+
+cardTitle.forEach(element => {
+  console.log(element);
+  element.style.color = "blue"; 
+  // style is a method that you can use on the DOM that would style your elements just like you would in css 
+  // Note: if in JS, use camelCase (e.g backgroundColor instead of background-color in CSS)
+})
