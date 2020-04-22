@@ -164,4 +164,12 @@ dogImage.alt = "dogs rule!"   // Don't forget to change the alt when you change 
 // dogImage.setAttribute("src", "https://i.insider.com/5df126b679d7570ad2044f3e?width=1100&format=jpeg&auto=webp")
 
 
+// Step 6: DOM Style
+//  anything with a - needs to be camel cased.  eg: background-color should be style.backgroundColor
+
+/* Give the element with id 'special' a 2px solid blue border*/
+const special = document.querySelector('#special');
+special.style.border = "2px solid blue";  
+
+
 
