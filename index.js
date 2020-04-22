@@ -172,4 +172,10 @@ const special = document.querySelector('#special');
 special.style.border = "2px solid blue";  
 
 
+// Step 7: classList manipulation, we will remove a class called ".extra-stuff" from our DOM.
+
+const lastCard = document.querySelector('.card-text--last');
+
+// classList = JS method with extra methods(add,remove, toggle )
+lastCard.classList.remove("extra-stuff"); 
 
