@@ -187,3 +187,13 @@ lastCard.classList.remove("extra-stuff");
 // Item Creation Step 1: create a new element
 const newContent = document.createElement("footer");
 
+
+// Item Creation Step 2: add some content to the newly created div
+newContent.textContent = "website by Christina Gorton";
+
+// Ways to create content: 
+// .textContent - recommended! 
+// .innerText
+// .innerHTML  - caution! Malicious things can be added to your website; risk of a malicious attack; if code undergoes a security review, code will be rejected if using this 
+
+
