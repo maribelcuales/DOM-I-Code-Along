@@ -179,3 +179,11 @@ const lastCard = document.querySelector('.card-text--last');
 // classList = JS method with extra methods(add,remove, toggle )
 lastCard.classList.remove("extra-stuff"); 
 
+
+// Step 8: Creating new DOM elements in JS only
+
+// Creating a new element, adding content, and adding it to browser
+
+// Item Creation Step 1: create a new element
+const newContent = document.createElement("footer");
+
