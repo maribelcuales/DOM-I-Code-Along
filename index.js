@@ -211,3 +211,67 @@ parentElement.append(newContent);
 //parentElement.prepend(newContent);
 
 
+
+/////   JS Selectors Practice Exercise    /////
+
+/* Style the HTML elements according to the following instructions. 
+DO NOT ALTER THE EXISTING HTML TO DO THIS.  WRITE ONLY JS!
+
+/* Give the <body> element a background of #bdc3c7*/
+
+document.querySelector('body').style.backgroundColor = '#bdc3c7';
+
+
+/* Make the <h1> element this color #9b59b6*/
+
+document.querySelector('h1').style.color = '#9b59b6';
+
+/* Change the first h2's text to "this is how we use textContent" */
+
+document.querySelector('h2').textContent = "this is how we use textContent"; 
+
+/* Make every odd <li> element blue*/ 
+
+const oddList = document.querySelectorAll('li:nth-of-type(odd)');
+
+oddList.forEach(element => {
+  element.style.color = 'blue';
+})
+
+
+/*Change the background on the second paragraph to be yellow*/
+
+const yellow = document.querySelector('p:nth-of-type(2)');
+
+yellow.style.backgroundColor = "yellow";
+
+/* Give the element with id 'special' a 2px solid blue border*/
+
+const special = document.querySelector('#special');
+
+special.style.border = "2px solid blue";  
+
+
+/* create and prepend or append newly created item */
+// Item Creation Step 1: create a new element
+
+const newFooter = document.createElement('footer'); 
+
+
+// Item Creation Step 2: add some content to the newly created element
+
+newFooter.textContent = 'Guided Project by Christina Gorton'
+
+
+// Item Creation Step 3: prepend or append the element to an existing DOM node on the page
+
+const parentElement = document.querySelector('body');
+
+parentElement.append(newFooter);
+
+newFooter.style.border = "2px solid orange"; 
+
+
+
+
+
