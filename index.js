@@ -197,3 +197,17 @@ newContent.textContent = "website by Christina Gorton";
 // .innerHTML  - caution! Malicious things can be added to your website; risk of a malicious attack; if code undergoes a security review, code will be rejected if using this 
 
 
+// Item Creation Step 3: prepend or append the element to an existing DOM node on the page
+
+// add element after the body
+const parentElement = document.querySelector('body');
+
+// const parentElement = document.querySelector('.card'); // add to the class card
+
+// append puts everything towards to the bottom
+parentElement.append(newContent);
+
+// prepend goes to the top 
+//parentElement.prepend(newContent);
+
+
