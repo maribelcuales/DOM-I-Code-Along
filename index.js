@@ -141,3 +141,27 @@ Older DOM Methods:
   - querySelectorAll()
 */ 
 
+
+// Convert HTMLColletion to an Array.
+// Array.from  - how to turn something into an array
+
+Array.from(links).forEach(link => {  // links from line 89
+  // do stuff 
+  link.textContent = "arrays!"
+})
+
+// // Step 5: DOM manipulation
+// How to change an attribute (src attribute in HTML)
+
+const dogImage = document.querySelector('.card-img-top'); 
+console.log(dogImage);
+
+dogImage.src = 'https://i.insider.com/5df126b679d7570ad2044f3e?width=1100&format=jpeg&auto=webp';
+
+dogImage.alt = "dogs rule!"   // Don't forget to change the alt when you change the image
+
+// ( Alternative way ) 
+// dogImage.setAttribute("src", "https://i.insider.com/5df126b679d7570ad2044f3e?width=1100&format=jpeg&auto=webp")
+
+
+
